@@ -39,6 +39,7 @@ const Navbar = () => {
     if (searchBarRef.current && !searchBarRef.current.contains(e.target as Element)) {
       setSearchPlayer("");
       setPlayers([]);
+      setIsFetching(true)
     }
   };
 
@@ -55,24 +56,24 @@ const Navbar = () => {
             setSearchPlayer(e.target.value)
             handleSearchPlayerOnchange(e.target.value)
           }} type="text" name="" id="" placeholder="Search Player..." className='px-2 py-1 outline-none bg-transparent w-[75%]' />
-          {players.length != 0 && <div className={`h-auto absolute  w-[calc(100%+100px)] rounded border border-[#f93cd367] bg-[#363636f6] top-[calc(100%+20px)] transition duration-500 ${searchPlayer === "" ? "opacity-0 z-[-10]" : "opacity-100 z-[10]"}`}>
-            {players.length != 0 ? players.map((item, index) =>
+          {players.length != 0 ? <div className={`h-auto absolute  w-[calc(100%+100px)] rounded border border-[#f93cd367] bg-[#363636f6] top-[calc(100%+20px)] transition duration-500 ${searchPlayer === "" ? "opacity-0 z-[-10]" : "opacity-100 z-[10]"}`}>
+            {players.map((item, index) =>
               // render player name
               <a href={`/players/${item['Id']}/${searchPlayer}`} key={item['Id']}>
                 <div className="transition py-2 px-3 cursor-pointer ransition hover:bg-[#5c5c5cf6]">{item['Name']}</div>
               </a>
-            ) :
-              (!isFetching && <div className="p-3 select-none">
-                <div className="flex items-center justify-center">
-                  <img src="/data-not-found.png" alt="" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <div>Oops!</div>
-                  <div>Data not found!</div>
-                </div>
-              </div>)}
+            )
+            }
 
-          </div>}
+          </div> : (!isFetching && <div className={`h-auto absolute  w-[calc(100%+100px)] rounded border border-[#f93cd367] bg-[#363636f6] top-[calc(100%+20px)] transition duration-500 ${searchPlayer === "" ? "opacity-0 z-[-10]" : "opacity-100 z-[10]"}`}><div className="p-3 select-none">
+            <div className="flex items-center justify-center">
+              <img src="/data-not-found.png" alt="" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <div>Oops!</div>
+              <div>Data not found!</div>
+            </div>
+          </div></div>)}
         </div>
         <Link to="/buildstats/stalker">
           <div className='relative mx-1 md:mx-2 cursor-pointer hover:text-[#f47b8f] transition after:transition-[transform] after:content-[""] after:block after:absolute after:w-full after:-bottom-[4px] after:border-b after:border-white after:origin-left after:transform after:scale-x-0 hover:after:scale-x-100'>
