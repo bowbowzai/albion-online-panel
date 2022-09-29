@@ -58,7 +58,7 @@ const Home = () => {
   const [topWinRateBuild, setTopWinRateBuild] = useState<WinRateBuild[]>([])
   const [streamsData, setStreamsData] = useState([]);
   const [loadingTwitter, setLoadingTwitter] = useState(true)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
   const [windowInnerWidth, setWindowInnerWidth] = useState(window.innerWidth)
 
   const getTopKillFame = async () => {
