@@ -240,7 +240,7 @@ const Home = () => {
                 News
               </h2>
               <div className='mt-3'>
-                {/* <TwitterTimelineEmbed
+                <TwitterTimelineEmbed
                   onLoad={function noRefCheck() { setLoadingTwitter(false) }}
                   options={{
                     height: 600
@@ -250,7 +250,7 @@ const Home = () => {
                   sourceType="profile"
                   theme='dark'
                   noScrollbar={true}
-                /> */}
+                />
                 {loadingTwitter && <div className='my-3 flex items-center justify-center'>
                   <Loading />
                 </div>}
