@@ -127,6 +127,7 @@ const Home = () => {
     window.addEventListener("resize", handleResize)
     getTopKillFame();
     getTopWinRateStalkerWeopon();
+    setIsLoading(false)
     // getTwitchALOLStreams();
     return () => {
       window.removeEventListener("resize", handleResize)
