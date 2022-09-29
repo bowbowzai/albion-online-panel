@@ -15,7 +15,6 @@ import Events from './pages/Events'
 function App() {
   useEffect(() => {
     document.title = "AlbionOL Panel"
-    console.log(import.meta.env.VITE_CLIENT_ID_KEY);
   }, [])
   return (
     <div className="App">
