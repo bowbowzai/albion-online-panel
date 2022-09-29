@@ -13,7 +13,7 @@ export const swaggerMurderLedger = axios.create({
 export const twitchStreams = axios.create({
   baseURL: "https://api.twitch.tv/helix/",
   headers: {
-    "Client-Id": import.meta.env.VITE_SOME_KEY_CLIENT_ID_KEY
+    "Client-Id": process.env.VITE_SOME_KEY_CLIENT_ID_KEY as string
   }
 })
 

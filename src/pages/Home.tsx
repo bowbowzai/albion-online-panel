@@ -90,8 +90,8 @@ const Home = () => {
         window.localStorage.removeItem("twitchAccessTokenExpiredTime")
       }
       const res = await axios.post("https://id.twitch.tv/oauth2/token", {
-        client_id: import.meta.env.VITE_SOME_KEY_CLIENT_ID_KEY,
-        client_secret: import.meta.env.VITE_SOME_KEY_CLIENT_SECRET_KEY,
+        client_id: process.env.VITE_SOME_KEY_CLIENT_ID_KEY,
+        client_secret: process.env.VITE_SOME_KEY_CLIENT_SECRET_KEY,
         grant_type: "client_credentials"
       })
       window.localStorage.setItem("TwitchAccessToken", res.data.access_token);
@@ -127,7 +127,7 @@ const Home = () => {
     window.addEventListener("resize", handleResize)
     getTopKillFame();
     getTopWinRateStalkerWeopon();
-    // getTwitchALOLStreams();
+    getTwitchALOLStreams();
     return () => {
       window.removeEventListener("resize", handleResize)
     }
