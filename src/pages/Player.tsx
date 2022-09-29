@@ -138,7 +138,7 @@ const Player = () => {
                   })
                 }
               </tbody>
-            </table> : <div className='flex flex-col items-center justify-center w-full h-full'><img src="/src/assets/data-not-found.png" alt="" />No data... </div>}
+            </table> : <div className='flex flex-col items-center justify-center w-full h-full'><img src="/static/data-not-found.png" alt="" />No data... </div>}
           </div>
           <div ref={exploreMoreWeoponRef} className={`fixed translate-x-[-50%] left-[50%] w-[90%] md:w-[60%] h-[50%]  transition z-[10] overflow-y-scroll rounded px-3 py-2 exploreMoreBuildFocus bg-[#27292a] border border-[#f93cd367]   ${isExploreMoreWeopons ? "scale-100 " : "scale-0"}`}>
             {isFetchingAll ? <div className='w-full h-full flex justify-center items-center'><Loading /></div> : playerAllWeopons.length != 0 ? <table>
@@ -165,7 +165,7 @@ const Player = () => {
                   })
                 }
               </tbody>
-            </table> : <div className='flex flex-col items-center justify-center w-full h-full'><img src="/src/assets/data-not-found.png" alt="" />No data... </div>}
+            </table> : <div className='flex flex-col items-center justify-center w-full h-full'><img src="/static/data-not-found.png" alt="" />No data... </div>}
           </div>
           <div className='flex items-center'>
             <h2 className='text-2xl story-gradient w-fit'>
@@ -179,25 +179,25 @@ const Player = () => {
             <div className='w-fit border border-[#f93cd367] py-1 px-3 rounded-full shadow-md transition shadow-[#f93cd367]'>
               Killing Players Fame: <p className='inline font-mono'>
                 {playerBasicInfo && numberFormat(playerBasicInfo['KillFame'])}
-                <img src="/src/assets/fame.png" alt="" className='w-[15px] inline ml-2' />
+                <img src="/static/fame.png" alt="" className='w-[15px] inline ml-2' />
               </p>
             </div>
             <div className='mt-3 md:mt-0 w-fit md:ml-4 border border-[#f93cd367] py-1 px-3 rounded-full shadow-md transition shadow-[#f93cd367]'>
               Killing Mobs Fame: <p className='inline font-mono'>
                 {playerBasicInfo && numberFormat(playerBasicInfo['LifetimeStatistics']['PvE']['Total'])}
-                <img src="/src/assets/fame.png" alt="" className='w-[15px] inline ml-2' />
+                <img src="/static/fame.png" alt="" className='w-[15px] inline ml-2' />
               </p>
             </div>
             <div className='my-3 md:my-0 w-fit md:mx-4 border border-[#f93cd367] py-1 px-3 rounded-full shadow-md transition shadow-[#f93cd367]'>
               Gathering Fame: <p className='inline font-mono'>
                 {playerBasicInfo && numberFormat(playerBasicInfo['LifetimeStatistics']['Gathering']['All']['Total'])}
-                <img src="/src/assets/fame.png" alt="" className='w-[15px] inline ml-2' />
+                <img src="/static/fame.png" alt="" className='w-[15px] inline ml-2' />
               </p>
             </div>
             <div className='w-fit border border-[#f93cd367] py-1 px-3 rounded-full shadow-md transition shadow-[#f93cd367]'>
               Crafting Fame: <p className='inline font-mono'>
                 {playerBasicInfo && numberFormat(playerBasicInfo['LifetimeStatistics']['Crafting']['Total'])}
-                <img src="/src/assets/fame.png" alt="" className='w-[15px] inline ml-2' />
+                <img src="/static/fame.png" alt="" className='w-[15px] inline ml-2' />
               </p>
             </div>
           </div>

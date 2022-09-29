@@ -18,7 +18,7 @@ const StreamView = ({ language, thumbnail_url, title, type, user_login, user_nam
     <a href={`https://www.twitch.tv/${user_login}`} target="_blank" rel='noreferrer noopenner' className='block cursor-pointer border border-[#f93cd367] transition hover:scale-105'>
       <div className='relative '>
         {type == "live" && <div className='absolute left-3 top-0 w-[70px]'>
-          <img src="/src/assets/live.png" alt="" />
+          <img src="/static/live.png" alt="" />
         </div>}
         <img src={thumbnail_url.replace("{width}x{height}", "500x300")} alt="" className='w-full md:w-auto select-none' />
         <div className='py-[3px] px-2 bg-[#191919b7] absolute flex items-center justify-center bottom-5 left-3'>

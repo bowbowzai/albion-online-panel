@@ -13,7 +13,7 @@ const About = () => {
       <div className='p-8 mt-5 bg-[#191b1bc0] rounded-lg border border-[#f93cd367]'>
         <div className='flex flex-col md:flex-row items-center'>
           <div className='select-none overflow-hidden rounded-full w-[40%] mb-5 md:mb-0 md:w-[20%]'>
-            <img src="/src/assets/developer.jpeg" alt="" className='w-full' />
+            <img src="/static/developer.jpeg" alt="" className='w-full' />
           </div>
           <div className='md:ml-5 w-full text-xl text-justify'>
             Hello guys! I am the developer of AlbionOL Panel,I come from Malaysia and now studying in Xiamen University Malaysia as a year 2 software engineering student.
@@ -34,7 +34,7 @@ const About = () => {
           <div className='mt-3'>
             <p>Welcome to add me XD, I have no friends that are playing this game :(</p>
             <div className="flex justify-center mt-3">
-              <img src="/src/assets/mygame.png" alt="" />
+              <img src="/static/mygame.png" alt="" />
             </div>
           </div>
         </div>

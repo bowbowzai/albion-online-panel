@@ -26,7 +26,7 @@ const RecentTopFameKillListItem = ({ eventID, timestamp, killerId, killerName, k
         </a>
       </div>
       <div className='mx-3 flex items-center justify-center place-items-center select-none'>
-        <img src="/src/assets/knife.png" alt="" className='w-[30px]' />
+        <img src="/static/knife.png" alt="" className='w-[30px]' />
       </div>
       <div className='truncate flex items-center'>
         <div className='min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px] select-none'>
@@ -43,7 +43,7 @@ const RecentTopFameKillListItem = ({ eventID, timestamp, killerId, killerName, k
           </p>
         </div>
         <div className='ml-1 pt-2 w-[25px] select-none'>
-          <img src="/src/assets/fame.png" alt="Fame" />
+          <img src="/static/fame.png" alt="Fame" />
         </div>
       </div>
     </a>
