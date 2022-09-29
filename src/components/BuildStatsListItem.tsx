@@ -63,7 +63,7 @@ const BuildStatsListItem = ({ build, deaths, kills, usages, win_rate }: BuildSta
             <div className='mr-2'>
               {usages.toLocaleString()}
             </div>
-            <img src="/static/star.png" alt="" className='w-[30px] mt-1' />
+            <img src="/star.png" alt="" className='w-[30px] mt-1' />
           </div>) : (<div>
             <div>
               {usages.toLocaleString()}

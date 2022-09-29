@@ -412,19 +412,19 @@ const PlayerRecentBattles = ({ BattleId, KillerName, TimeStamp, TotalVictimKillF
           {
             isPlayerBeKilled == true ?
               <div className='flex flex-col justify-center items-center font-mono'>
-                <img src="/static/death.png" alt="" className='w-[30px]' />
+                <img src="/death.png" alt="" className='w-[30px]' />
                 <div className='flex items-center'>
                   {TotalVictimKillFame.toLocaleString()}
                   <div className='ml-1 pt-2 w-[20px] select-none'>
-                    <img src="/static/fame.png" alt="Fame" />
+                    <img src="/fame.png" alt="Fame" />
                   </div>
                 </div>
               </div> : <div className='flex flex-col justify-center items-center text-center font-mono'>
-                <img src="/static/knife.png" alt="" className='w-[30px]' />
+                <img src="/knife.png" alt="" className='w-[30px]' />
                 <div className='flex items-center'>
                   {TotalVictimKillFame.toLocaleString()}
                   <div className='ml-1 mt-1 w-[20px] select-none'>
-                    <img src="/static/fame.png" alt="Fame" />
+                    <img src="/fame.png" alt="Fame" />
                   </div>
                 </div>
               </div>

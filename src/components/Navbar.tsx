@@ -64,7 +64,7 @@ const Navbar = () => {
             ) :
               (!isFetching && <div className="p-3 select-none">
                 <div className="flex items-center justify-center">
-                  <img src="/static/data-not-found.png" alt="" />
+                  <img src="/data-not-found.png" alt="" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <div>Oops!</div>
@@ -92,7 +92,7 @@ const Navbar = () => {
         <div className='mx-1 md:mx-2 cursor-pointer flex justify-center  items-center border border-[#f47b8f] p-2 rounded-full hover:bg-[#f47b8f57] transition hover:border-[#f9506c]'>
           <span className="ml-1">Gold Price</span>
           <div className='flex justify-center items-center'>
-            <img src="/static/gold-icon.png" alt="" className='w-[65%]' />
+            <img src="/gold-icon.png" alt="" className='w-[65%]' />
           </div>
         </div></Link>
     </div>

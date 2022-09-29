@@ -203,7 +203,7 @@ const Events = () => {
                       </div>
                     </div>
                   </div>
-                  <img src="/static/vs.png" alt="" className='w-[150px]' />
+                  <img src="/vs.png" alt="" className='w-[150px]' />
                   <div>
                     <div className='flex flex-col justify-center items-center'>
                       <a href={`/players/${eventData?.Victim.Id}/${eventData?.Victim.Name}`} className="div hover:text-[#ba59ff] transition cursor-pointer">
@@ -215,13 +215,13 @@ const Events = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/static/knife.png" alt="" className='w-[120px]' />
+                <img src="/knife.png" alt="" className='w-[120px]' />
                 <div>
                   Killed
                 </div>
                 <div className='text-4xl font-mono flex items-center'>
                   {eventData && eventData.TotalVictimKillFame.toLocaleString()}
-                  <img src="/static/fame.png" alt="" className='w-[40px] inline ml-2 mt-1' />
+                  <img src="/fame.png" alt="" className='w-[40px] inline ml-2 mt-1' />
                 </div>
               </div>
               <div>

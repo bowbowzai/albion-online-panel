@@ -25,7 +25,7 @@ const CustomTooltip = ({
       <div className='flex items-center'>
         {
           payload && payload.length != 0 && payload[0].payload.price.toLocaleString()
-        } Siver per  <img src="/static/gold-icon.png" alt="" className='ml-1 mt-1 w-[20px]' />
+        } Siver per  <img src="/gold-icon.png" alt="" className='ml-1 mt-1 w-[20px]' />
       </div>
     </div>
   )

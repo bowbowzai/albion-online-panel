@@ -54,7 +54,6 @@ interface WinRateBuild {
 }
 
 const Home = () => {
-  let isFirstTime = true;
   const [topKilLFame, setTopKillFame] = useState([])
   const [topWinRateBuild, setTopWinRateBuild] = useState<WinRateBuild[]>([])
   const [streamsData, setStreamsData] = useState([]);
@@ -126,17 +125,14 @@ const Home = () => {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize)
-    if (isFirstTime) {
-      getTopKillFame();
-      getTopWinRateStalkerWeopon();
-      getTwitchALOLStreams();
-      isFirstTime = false;
-
-    }
+    getTopKillFame();
+    getTopWinRateStalkerWeopon();
+    getTwitchALOLStreams();
     return () => {
       window.removeEventListener("resize", handleResize)
     }
   }, [])
+
   return (
     <div>
       {
