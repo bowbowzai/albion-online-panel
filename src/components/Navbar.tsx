@@ -46,7 +46,7 @@ const Navbar = () => {
     <div className='text-white flex items-center justify-between p-1 md:p-3 font-playfair'>
       <Link to="/">
         <div className='flex items-center justify-center w-[100px] h-[100px] rounded-full cursor-pointer transition hover:scale-105'>
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src="../assets/logo.png" alt="logo" />
         </div></Link>
       <div ref={searchBarRef} className='flex justify-center items-center'>
         <div className='relative w-[150px] md:w-[200px] flex items-center justify-center rounded-full bg-[#79797978] border border-transparent focus-within:border-[#f47b8f] focus-within:bg-[#79797940] transition mr-2'>
