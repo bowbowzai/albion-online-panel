@@ -90,8 +90,8 @@ const Home = () => {
         window.localStorage.removeItem("twitchAccessTokenExpiredTime")
       }
       const res = await axios.post("https://id.twitch.tv/oauth2/token", {
-        client_id: process.env.VITE_SOME_KEY_CLIENT_ID_KEY,
-        client_secret: process.env.VITE_SOME_KEY_CLIENT_SECRET_KEY,
+        client_id: import.meta.env.VITE_CLIENT_ID_KEY,
+        client_secret: import.meta.env.VITE_CLIENT_SECRET_KEY,
         grant_type: "client_credentials"
       })
       window.localStorage.setItem("TwitchAccessToken", res.data.access_token);
@@ -119,7 +119,7 @@ const Home = () => {
 
   const handleResize = () => {
     setWindowInnerWidth(window.innerWidth)
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     // console.log("hi")
   }
 
