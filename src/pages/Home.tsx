@@ -124,13 +124,13 @@ const Home = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize)
+    // window.addEventListener("resize", handleResize)
     getTopKillFame();
-    getTopWinRateStalkerWeopon();
-    setIsLoading(false)
+    // getTopWinRateStalkerWeopon();
+    // setIsLoading(false)
     // getTwitchALOLStreams();
     return () => {
-      window.removeEventListener("resize", handleResize)
+      // window.removeEventListener("resize", handleResize)
     }
   }, [])
 
@@ -138,7 +138,7 @@ const Home = () => {
     <div>
       {
         isLoading ? <div className='flex justify-center'><Loading /></div> : <div>
-          <div className='flex flex-col md:flex-row justify-around'>
+          {/* <div className='flex flex-col md:flex-row justify-around'>
             <div className='p-4 h-auto bg-[#191b1bc0] rounded-lg border border-[#f93cd367] w-full md:w-fit md:w-[45%]'>
               <div>
                 <h2 className='text-xl story-gradient w-fit '>
@@ -206,7 +206,7 @@ const Home = () => {
                   </SwiperSlide>)
               }
             </Swiper> : <div className='mt-2'>No live streaming now..</div>}
-          </div>
+          </div> */}
           <div className='mt-5 flex flex-col flex-col-reverse md:flex-row items-start justify-around'>
             <div className='mt-5 md:mt-0 h-auto p-4 bg-[#191b1bc0] rounded-lg border border-[#f93cd367] w-full md:w-[60%]'>
               <h2 className='text-xl story-gradient w-fit '>
