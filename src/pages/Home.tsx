@@ -83,36 +83,36 @@ const Home = () => {
   }
 
   const getTwitchALOLStreams = async () => {
-    // const twitchAccessTokenExpiredTime = window.localStorage.getItem("twitchAccessTokenExpiredTime");
-    // if (!twitchAccessTokenExpiredTime || Number(twitchAccessTokenExpiredTime) <= Date.now()) {
-    //   if (twitchAccessTokenExpiredTime) {
-    //     window.localStorage.removeItem("TwitchAccessToken")
-    //     window.localStorage.removeItem("twitchAccessTokenExpiredTime")
-    //   }
-    //   const res = await axios.post("https://id.twitch.tv/oauth2/token", {
-    //     client_id: import.meta.env.VITE_CLIENT_ID_KEY,
-    //     client_secret: import.meta.env.VITE_CLIENT_SECRET_KEY,
-    //     grant_type: "client_credentials"
-    //   })
-    //   window.localStorage.setItem("TwitchAccessToken", res.data.access_token);
-    //   window.localStorage.setItem("twitchAccessTokenExpiredTime", res.data.expires_in + Date.now());
+    const twitchAccessTokenExpiredTime = window.localStorage.getItem("twitchAccessTokenExpiredTime");
+    if (!twitchAccessTokenExpiredTime || Number(twitchAccessTokenExpiredTime) <= Date.now()) {
+      if (twitchAccessTokenExpiredTime) {
+        window.localStorage.removeItem("TwitchAccessToken")
+        window.localStorage.removeItem("twitchAccessTokenExpiredTime")
+      }
+      const res = await axios.post("https://id.twitch.tv/oauth2/token", {
+        client_id: import.meta.env.VITE_CLIENT_ID_KEY,
+        client_secret: import.meta.env.VITE_CLIENT_SECRET_KEY,
+        grant_type: "client_credentials"
+      })
+      window.localStorage.setItem("TwitchAccessToken", res.data.access_token);
+      window.localStorage.setItem("twitchAccessTokenExpiredTime", res.data.expires_in + Date.now());
 
-    // }
-    // const res = await twitchStreams.get("games?name=Albion Online", {
-    //   headers: {
-    //     "Authorization": "Bearer " + window.localStorage.getItem("TwitchAccessToken")
-    //   }
-    // })
-    // // console.log(res)
-    // const albionGameID = res.data.data[0].id;
-    // // console.log(albionGameID);
-    // const streams = await twitchStreams.get(`streams?game_id=${albionGameID}`, {
-    //   headers: {
-    //     "Authorization": "Bearer " + window.localStorage.getItem("TwitchAccessToken")
-    //   }
-    // })
-    // // console.log(streams.data.data)
-    // setStreamsData(streams.data.data)
+    }
+    const res = await twitchStreams.get("games?name=Albion Online", {
+      headers: {
+        "Authorization": "Bearer " + window.localStorage.getItem("TwitchAccessToken")
+      }
+    })
+    // console.log(res)
+    const albionGameID = res.data.data[0].id;
+    // console.log(albionGameID);
+    const streams = await twitchStreams.get(`streams?game_id=${albionGameID}`, {
+      headers: {
+        "Authorization": "Bearer " + window.localStorage.getItem("TwitchAccessToken")
+      }
+    })
+    // console.log(streams.data.data)
+    setStreamsData(streams.data.data)
     // setStreamsData([])
     setIsLoading(false)
   }
@@ -127,7 +127,7 @@ const Home = () => {
     window.addEventListener("resize", handleResize)
     getTopKillFame();
     getTopWinRateStalkerWeopon();
-    getTwitchALOLStreams();
+    // getTwitchALOLStreams();
     return () => {
       window.removeEventListener("resize", handleResize)
     }
