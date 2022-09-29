@@ -352,7 +352,7 @@ const PlayerRecentBattles = ({ BattleId, KillerName, TimeStamp, TotalVictimKillF
   return (
     <a href={`/events/${BattleId}`} className='block my-5 flex justify-center'>
       <div className={'flex flex-col md:flex-row items-center justify-between w-full cursor-pointer py-2 mx-1 px-2 rounded-lg transition hover:scale-[101.5%] ' + (isPlayerBeKilled ? "playerBeKilled" : "playerKilled")}>
-        <div>
+        <div >
           <h3 className='text-lg font-mono'>{isPlayerBeKilled == true ? `${VictimName} (${VictimAverageItemPower.toFixed(0)}IP)` : `${KillerName} (${KillerAverageItemPower.toFixed(0)}IP)`}</h3>
           <div className='truncate flex flex-wrap  items-center'>
             <div className='min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none'>
@@ -401,7 +401,7 @@ const PlayerRecentBattles = ({ BattleId, KillerName, TimeStamp, TotalVictimKillF
                 isPlayerBeKilled == true ? <img src={`https://render.albiononline.com/v1/item/${VictimEquipment.Potion?.Type}.png?quality=${VictimEquipment.Potion?.Quality}`} alt="" /> : <img src={`https://render.albiononline.com/v1/item/${KillerEquipment.Potion?.Type}.png?quality=${KillerEquipment.Potion?.Quality}`} alt="" />
               }
             </div>
-            <div className={`min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none ${VictimEquipment.Food != null ? " block" : "hidden"}`}>
+            <div className={`min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none`}>
               {
                 isPlayerBeKilled == true ? <img src={`https://render.albiononline.com/v1/item/${VictimEquipment.Food?.Type}.png?quality=${VictimEquipment.Food?.Quality}`} alt="" /> : <img src={`https://render.albiononline.com/v1/item/${KillerEquipment.Food?.Type}.png?quality=${KillerEquipment.Food?.Quality}`} alt="" />
               }
@@ -494,7 +494,7 @@ const PlayerRecentBattles = ({ BattleId, KillerName, TimeStamp, TotalVictimKillF
                 isPlayerBeKilled == true ? <img src={`https://render.albiononline.com/v1/item/${KillerEquipment.Potion?.Type}.png?quality=${KillerEquipment.Potion?.Quality}`} alt="" /> : <img src={`https://render.albiononline.com/v1/item/${VictimEquipment.Potion?.Type}.png?quality=${VictimEquipment.Potion?.Quality}`} alt="" />
               }
             </div>
-            <div className={`min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none ${KillerEquipment.Food != null ? "block" : "hidden"} md:block`}>
+            <div className={`min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none`}>
               {
                 isPlayerBeKilled == true ? <img src={`https://render.albiononline.com/v1/item/${KillerEquipment.Food?.Type}.png?quality=${KillerEquipment.Food?.Quality}`} alt="" /> : <img src={`https://render.albiononline.com/v1/item/${VictimEquipment.Food?.Type}.png?quality=${VictimEquipment.Food?.Quality}`} alt="" />
               }
