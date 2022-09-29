@@ -1,0 +1,16 @@
+https://www.tools4albion.com/api_info.php
+https://wiki.albiononline.com/wiki/API:Render_service
+https://editor.swagger.io/?url=https://murderledger.com/api/openapi.json
+https://www.albion-online-data.com/
+
+layout similar
+https://templatemo.com/live/templatemo_579_cyborg_gaming
+
+leaderboard design
+https://dribbble.com/shots/4616574-Daily-UI-019-Leaderboard
+
+cors proxy
+https://allorigins.win/
+
+10 free to use cors proxy
+https://nordicapis.com/10-free-to-use-cors-proxies/

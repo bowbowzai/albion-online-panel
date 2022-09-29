@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  color: white;
+  background: #f93cd367;
+}
+
+.bg-main {
+  background-color: #240b36;
+}
+
+.bg-shine {
+  background-image: radial-gradient(20% 45% at 55% 10%, #c31432 -100%, transparent 100%), radial-gradient(20% 35% at 0% 50%, #c31432 -400%, transparent 100%);
+}
+
+.story-gradient {
+  background: linear-gradient(transparent 70%, #6b2a9a 90%);
+}
+
+.recommend-shadow {
+  filter: drop-shadow(0 0 0.2rem crimson);
+}
+
+.small-nav {
+  filter: drop-shadow(0 0 0.3rem #ba59ff);
+}
+
+.container-box-shadow {
+  box-shadow: 0px 0px 20px #f93cd367;
+}
+
+.loading-animate {
+  transform-origin: center;
+  animation: 3s infinite LoadingAnimation;
+}
+
+.bounce div {
+  animation: Bounce 2s infinite;
+}
+
+.exploreMoreBuildFocus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5), 0px 0px 30px 10px #f93cd367;;
+  
+}
+
+.exploreMoreBuildFocus::-webkit-scrollbar {
+  display: none;
+}
+
+.test {
+  color: #27292a;
+}
+
+.bounce div:nth-child(2) {
+  animation-delay: .2s;
+}
+.bounce div:nth-child(3) {
+  animation-delay: .3s;
+}
+.bounce div:nth-child(4) {
+  animation-delay: .4s;
+}
+.bounce div:nth-child(5) {
+  animation-delay: .5s;
+}
+.bounce div:nth-child(6) {
+  animation-delay: .6s;
+}
+.bounce div:nth-child(7) {
+  animation-delay: .7s;
+}
+.bounce div:nth-child(8) {
+  animation-delay: .8s;
+}
+.bounce div:nth-child(9) {
+  animation-delay: .9s;
+}
+.bounce div:nth-child(10) {
+  animation-delay: .10s;
+}
+
+.playerBeKilled{
+  box-shadow: 0px 0px 5px 1px red;
+}
+
+.playerKilled{
+  box-shadow: 0px 0px 5px 1px green;
+}
+
+@keyframes LoadingAnimation {
+  0% {
+    transform: scale(75%);
+  }
+  50% {
+    transform: scale(50%);
+  }
+  100% {
+    transform: scale(75%);
+  }
+}
+
+@keyframes Bounce {
+  0% {
+    transform: translateY(0%);
+    transform: scale(100%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+ 50% {
+    transform: translateY(0);
+    transform: scale(0%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  100% {
+    transform: translateY(0%);
+    transform: scale(100%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+}
+
