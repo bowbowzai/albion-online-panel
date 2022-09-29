@@ -354,7 +354,7 @@ const PlayerRecentBattles = ({ BattleId, KillerName, TimeStamp, TotalVictimKillF
       <div className={'flex flex-col md:flex-row items-center justify-between w-full cursor-pointer py-2 mx-1 px-2 rounded-lg transition hover:scale-[101.5%] ' + (isPlayerBeKilled ? "playerBeKilled" : "playerKilled")}>
         <div >
           <h3 className='text-lg font-mono'>{isPlayerBeKilled == true ? `${VictimName} (${VictimAverageItemPower.toFixed(0)}IP)` : `${KillerName} (${KillerAverageItemPower.toFixed(0)}IP)`}</h3>
-          <div className='truncate flex flex-wrap  items-center'>
+          <div className='truncate flex flex-wrap md:flex-nowrap items-center'>
             <div className='min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none'>
               {
                 isPlayerBeKilled == true ? <img src={`https://render.albiononline.com/v1/item/${VictimEquipment.MainHand?.Type}.png?quality=${VictimEquipment?.MainHand?.Quality}`} alt="" /> : <img src={`https://render.albiononline.com/v1/item/${KillerEquipment.MainHand?.Type}.png?quality=${KillerEquipment.MainHand?.Quality}`} alt="" />
@@ -448,7 +448,7 @@ const PlayerRecentBattles = ({ BattleId, KillerName, TimeStamp, TotalVictimKillF
         </div>
         <div>
           <a href={`/players/${isPlayerBeKilled == true ? KillerId : VictimId}/${isPlayerBeKilled == true ? KillerName : VictimName}`} className='block text-lg font-mono transition hover:text-[#ba59ff]'>{isPlayerBeKilled == true ? `${KillerName} (${KillerAverageItemPower.toFixed(0)}IP)` : `${VictimName} (${VictimAverageItemPower.toFixed(0)}IP)`}</a>
-          <div className='truncate flex flex-wrap items-center'>
+          <div className='truncate flex flex-wrap md:flex-nowrap items-center'>
             <div className='min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] select-none'>
               {
                 isPlayerBeKilled == true ? <img src={`https://render.albiononline.com/v1/item/${KillerEquipment.MainHand?.Type}.png?quality=${KillerEquipment.MainHand?.Quality}`} alt="" /> : <img src={`https://render.albiononline.com/v1/item/${VictimEquipment.MainHand?.Type}.png?quality=${VictimEquipment.MainHand?.Quality}`} alt="" />
