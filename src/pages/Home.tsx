@@ -187,7 +187,7 @@ const Home = () => {
               </a>
             </div>
             <div></div>
-            {/* {streamsData.length >= 1 ? <Swiper
+            {streamsData.length >= 1 ? <Swiper
               scrollbar={{ hide: true }}
               modules={[Autoplay, Scrollbar, Mousewheel]}
               className='mt-2 flex flex-wrap p-4 pb-5 md:max-w-[1480px]' spaceBetween={40}
@@ -204,7 +204,7 @@ const Home = () => {
                     <StreamView language={item["language"]} thumbnail_url={item["thumbnail_url"]} title={item["title"]} type={item["type"]} user_login={item["user_login"]} user_name={item["user_name"]} viewer_count={item["viewer_count"]} />
                   </SwiperSlide>)
               }
-            </Swiper> : <div className='mt-2'>No live streaming now..</div>} */}
+            </Swiper> : <div className='mt-2'>No live streaming now..</div>}
           </div>
           <div className='mt-5 flex flex-col flex-col-reverse md:flex-row items-start justify-around'>
             <div className='mt-5 md:mt-0 h-auto p-4 bg-[#191b1bc0] rounded-lg border border-[#f93cd367] w-full md:w-[60%]'>
@@ -240,7 +240,7 @@ const Home = () => {
                 News
               </h2>
               <div className='mt-3'>
-                <TwitterTimelineEmbed
+                {/* <TwitterTimelineEmbed
                   onLoad={function noRefCheck() { setLoadingTwitter(false) }}
                   options={{
                     height: 600
@@ -250,7 +250,7 @@ const Home = () => {
                   sourceType="profile"
                   theme='dark'
                   noScrollbar={true}
-                />
+                /> */}
                 {loadingTwitter && <div className='my-3 flex items-center justify-center'>
                   <Loading />
                 </div>}
