@@ -46,7 +46,7 @@ const Navbar = () => {
     <div className='text-white flex items-center justify-between p-1 md:p-3 font-playfair'>
       <Link to="/">
         <div className='flex items-center justify-center w-[100px] h-[100px] rounded-full cursor-pointer transition hover:scale-105'>
-          <img src="../assets/logo.png" alt="logo" />
+          <img src="/logo.png" alt="logo" />
         </div></Link>
       <div ref={searchBarRef} className='flex justify-center items-center'>
         <div className='relative w-[150px] md:w-[200px] flex items-center justify-center rounded-full bg-[#79797978] border border-transparent focus-within:border-[#f47b8f] focus-within:bg-[#79797940] transition mr-2'>
@@ -58,9 +58,9 @@ const Navbar = () => {
           {players.length != 0 && <div className={`h-auto absolute  w-[calc(100%+100px)] rounded border border-[#f93cd367] bg-[#363636f6] top-[calc(100%+20px)] transition duration-500 ${searchPlayer === "" ? "opacity-0 z-[-10]" : "opacity-100 z-[10]"}`}>
             {players.length != 0 ? players.map((item, index) =>
               // render player name
-              <Link to={`/players/${item['Id']}/${searchPlayer}`} key={item['Id']}>
+              <a href={`${window.location.protocol + "//" + window.location.host}/players/${item['Id']}/${searchPlayer}`} key={item['Id']}>
                 <div className="transition py-2 px-3 cursor-pointer ransition hover:bg-[#5c5c5cf6]">{item['Name']}</div>
-              </Link>
+              </a>
             ) :
               (!isFetching && <div className="p-3 select-none">
                 <div className="flex items-center justify-center">
