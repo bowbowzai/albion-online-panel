@@ -58,7 +58,7 @@ const Navbar = () => {
           {players.length != 0 && <div className={`h-auto absolute  w-[calc(100%+100px)] rounded border border-[#f93cd367] bg-[#363636f6] top-[calc(100%+20px)] transition duration-500 ${searchPlayer === "" ? "opacity-0 z-[-10]" : "opacity-100 z-[10]"}`}>
             {players.length != 0 ? players.map((item, index) =>
               // render player name
-              <a href={`${window.location.protocol + "//" + window.location.host}/players/${item['Id']}/${searchPlayer}`} key={item['Id']}>
+              <a href={`/players/${item['Id']}/${searchPlayer}`} key={item['Id']}>
                 <div className="transition py-2 px-3 cursor-pointer ransition hover:bg-[#5c5c5cf6]">{item['Name']}</div>
               </a>
             ) :
