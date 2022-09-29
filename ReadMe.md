@@ -1,0 +1,1 @@
+Albion online information included battle data, build stats in CD, Leaderboard, Player Information, Gold price, Popular twitch live streams, Juicy kills

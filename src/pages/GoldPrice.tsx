@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { albionData } from '../axios'
-import { AreaChart, XAxis, YAxis, Area, Tooltip, ResponsiveContainer, TooltipProps } from "recharts"
 import { format } from "date-fns"
-import {
-  ValueType,
-  NameType,
-} from 'recharts/src/component/DefaultTooltipContent';
+import { AreaChart, XAxis, YAxis, Area, Tooltip, ResponsiveContainer, TooltipProps } from "recharts"
 import { TiTick } from "react-icons/ti"
 import Loading from '../components/Loading';
 
@@ -20,7 +16,9 @@ const CustomTooltip = ({
   active,
   payload,
   label,
-}: TooltipProps<ValueType, NameType>) => {
+}
+  : TooltipProps<number | string, number | string>
+) => {
   return (
     <div className='text-white py-2 px-3 bg-[#26313c] small-nav'>
       <h3>{label && format(new Date(label).getTime(), "d,MMM h aaa")}</h3>
@@ -137,6 +135,7 @@ const GoldPrice = () => {
         </div></div>
       }
     </div>
+    // <div></div>
   )
 }
 
