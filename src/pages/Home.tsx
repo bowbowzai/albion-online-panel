@@ -251,8 +251,9 @@ const Home = () => {
                   theme='dark'
                 /> */}
                 <Timeline
-                  dataSource={{ sourceType: "profile", screenName: "reactjs" }}
-                  options={{ theme: "dark", width: "400", height: "600" }}
+                  onLoad={function noRefCheck() { setLoadingTwitter(false) }}
+                  dataSource={{ sourceType: "profile", screenName: "albiononline" }}
+                  options={{ theme: "dark", height: "600" }}
                 />
                 {loadingTwitter && <div className='my-3 flex items-center justify-center'>
                   <Loading />
