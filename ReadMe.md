@@ -44,5 +44,7 @@ Albion online information included battle data, build stats in CD, Leaderboard, 
 5. Battle details
 ![image](https://user-images.githubusercontent.com/74807962/193187623-bb54ab6e-3b75-4192-8d8f-2127b24cc0bd.png)
 
-```diff
-- ##PC view for the best using experience ><
+## ❗❗ PC view for the best using experience ❗❗
+> If you found any bug/error during visiting the page, contact me via twitter [Bowbowzai0215](https://twitter.com/Bowbowzai0215) , I will try my best to solve it.
+
+🎉Thanks for your star and supporting!🎉
