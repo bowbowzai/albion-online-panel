@@ -8,7 +8,6 @@ import WinRateBuild from '../components/WinRateWeopons';
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Scrollbar, Mousewheel, Autoplay } from "swiper";
 import { HiTrendingUp } from "react-icons/hi"
-import { TwitterTimelineEmbed } from "react-twitter-embed"
 import { Timeline } from "react-twitter-widgets"
 import 'swiper/css';
 import "swiper/css/scrollbar";
@@ -241,15 +240,6 @@ const Home = () => {
                 News
               </h2>
               <div className='mt-3'>
-                {/* <TwitterTimelineEmbed
-                  onLoad={function noRefCheck() { setLoadingTwitter(false) }}
-                  options={{
-                    height: 600
-                  }}
-                  screenName="albiononline"
-                  sourceType="profile"
-                  theme='dark'
-                /> */}
                 <Timeline
                   onLoad={function noRefCheck() { setLoadingTwitter(false) }}
                   dataSource={{ sourceType: "profile", screenName: "albiononline" }}

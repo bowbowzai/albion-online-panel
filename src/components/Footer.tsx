@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillGithub } from "react-icons/ai"
 const Footer = () => {
   return (
-    <div className='mt-auto flex justify-center flex-col w-full mb-5 text-white font-playfair shrink-0 w-full'>
+    <div className='w-[650px]  md:w-full mt-auto flex justify-center flex-col mb-5 text-white font-playfair shrink-0'>
       <div className='flex items-center justify-center'>
         Developed by <a href="https://github.com/bowbowzai" target="_blank" rel='noopenner noreferrer' className='hover:text-[#ff98eab9] transition'>@bowbowzai</a>
       </div>
