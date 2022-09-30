@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Scrollbar, Mousewheel, Autoplay } from "swiper";
 import { HiTrendingUp } from "react-icons/hi"
 import { TwitterTimelineEmbed } from "react-twitter-embed"
+import { Timeline } from "react-twitter-widgets"
 import 'swiper/css';
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay"
@@ -240,7 +241,7 @@ const Home = () => {
                 News
               </h2>
               <div className='mt-3'>
-                <TwitterTimelineEmbed
+                {/* <TwitterTimelineEmbed
                   onLoad={function noRefCheck() { setLoadingTwitter(false) }}
                   options={{
                     height: 600
@@ -248,6 +249,10 @@ const Home = () => {
                   screenName="albiononline"
                   sourceType="profile"
                   theme='dark'
+                /> */}
+                <Timeline
+                  dataSource={{ sourceType: "profile", screenName: "reactjs" }}
+                  options={{ theme: "dark", width: "400", height: "600" }}
                 />
                 {loadingTwitter && <div className='my-3 flex items-center justify-center'>
                   <Loading />
