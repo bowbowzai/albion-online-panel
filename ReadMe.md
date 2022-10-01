@@ -25,3 +25,10 @@ Albion online information included battle data, build stats in CD, Leaderboard, 
 - [x] Searching for specific player
 - [x] Player detailed information and recently battles
 - [x] Battle details included the participants in that fight
+
+
+
+```diff 
+- Desktop view for the best experience ><
+```
+
