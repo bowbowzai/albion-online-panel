@@ -3,6 +3,8 @@
 Albion online information included battle data, build stats in CD, Leaderboard, Player Information, Gold price, Popular twitch live streams, Juicy kills
 
 > Visit the live page on [AlbionOL Panel](https://albion-ol-panel.vercel.app/) 
+![image](https://user-images.githubusercontent.com/74807962/193187232-f91faa8f-12c9-4d55-86a1-b782f678a201.png)
+
 
 ###### Techs involved
 
@@ -26,9 +28,23 @@ Albion online information included battle data, build stats in CD, Leaderboard, 
 - [x] Player detailed information and recently battles
 - [x] Battle details included the participants in that fight
 
+## Website preview
+1. Build stats
+![image](https://user-images.githubusercontent.com/74807962/193187336-45484de5-c883-446d-85a9-ee750f6738cf.png)
 
+2. Leaderboards
+![image](https://user-images.githubusercontent.com/74807962/193187453-734a4e42-2957-43d0-9dca-a5c675877e38.png)
 
-```diff 
-- Desktop view for the best experience ><
-```
+3. Gold price
+![image](https://user-images.githubusercontent.com/74807962/193187512-4419cae1-1b46-4a59-96c2-067ffcedc211.png)
 
+4. Player info view
+![image](https://user-images.githubusercontent.com/74807962/193187560-eb56eeda-e7b0-45e4-a1cd-d2db4e0ee17c.png)
+
+5. Battle details
+![image](https://user-images.githubusercontent.com/74807962/193187623-bb54ab6e-3b75-4192-8d8f-2127b24cc0bd.png)
+
+## ❗❗ PC view for the best using experience ❗❗
+> If you found any bug/error during visiting the page, contact me via twitter [Bowbowzai0215](https://twitter.com/Bowbowzai0215) , I will try my best to solve it.
+
+🎉Thanks for your star and supporting!🎉
